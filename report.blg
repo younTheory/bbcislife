@@ -1,0 +1,10 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: report.aux
+The style file: plainnat.bst
+Database file #1: biblio.bib
+Warning--entry type for "Doe:2009:Online" isn't style-file defined
+--line 1 of file biblio.bib
+Warning--entry type for "wiki:Online" isn't style-file defined
+--line 9 of file biblio.bib
+Warning--entry type for "yoann:Online" isn't style-file defined
+--line 17 of file biblio.bib
+(There were 3 warnings)

@@ -1,0 +1,27 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Link(2012)]{Doe:2009:Online}
+Springer Link.
+\newblock Multiplexed paper test strip for quantitative bacterial detection.
+\newblock \url{http://link.springer.com/article/10.1007%2Fs00216-012-5975-x},
+  juin 2012.
+
+\bibitem[M.(2012)]{yoann:Online}
+Yoann M.
+\newblock Alignements multiples : quels logiciels choisir ?
+\newblock
+  \url{http://bioinfo-fr.net/alignements-multiples-quels-logiciels-choisir},
+  mai 2012.
+
+\bibitem[Wikipedia(2016)]{wiki:Online}
+Wikipedia.
+\newblock Multiple sequence alignment.
+\newblock \url{https://en.wikipedia.org/wiki/Multiple_sequence_alignment}, mai
+  2016.
+
+\end{thebibliography}
