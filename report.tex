@@ -1,6 +1,10 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\bibliographystyle{plainnat}
+\usepackage{url}
+
 \setlength{\parskip}{1em}
 
 \title{Détecter la bactérie\\ {\huge E. Coli} dans l'eau}
@@ -14,8 +18,7 @@
   \newpage
   
   \section{Introduction}
-    Notre but dans ce projet est de pouvoir concevoir un test facile d'usage permettant à une personne moyenne de tester la présence de la bactérie E. coli dans de l'eau.
-    
+    Notre but dans ce projet est de pouvoir concevoir un test facile d'usage permettant à une personne moyenne de tester la présence de la bactérie E. coli dans de l'eau.\\    
   \section{Contexte}
     Plus précisément, nous cherchons à trouver des épitopes sur la protéine \textbf{OmpF Porin} de la bactérie E. coli, qui seraient capables de détecter E. coli avec 100\% de taux de réussite quel que soit ses variations, mais sans détecter d'autres bactéries accidentellement. Ceci fait, notre épitope pourra être utilisé pour génerer un anticorps, qui sera ensuite utilisé dans le test ELISA.
     
@@ -41,6 +44,13 @@
       Ceci fait que le test change de couleur si E. coli est présent. Typiquement, il y aura aussi une partie qui détecte n'importe-quel antigène, pour vérifier que le test à fonctionné. Si aucun antigène n'est détecté par le test, c'est que les anticorps de capture ne ne sont pas liés à des antigènes, et qu'on ne peut rien affirmer sur la présence ou non d'E. coli.
       
   \section{Etat de l'art}
+  
+En premier lieu, nous allons d'abord nous intéresser à savoir si des tests existent déjà pour détecter la bactérie E. coli. Voici une méthode pour détecter la bactérie :\\
+Il existe un test avec une bande papier de ( 0.5 * 8 cm). Ce papier contient soit le 5-bromo-4-chloro-3-indolyl-B-D-glucuronide sel de sodium ( zone XG ci-dessous en image)et/ou le chlorophénol rouge B-galactopyranoside (zone CPRG ci-dessous en image). La bande de papier est ensuite mise dans l'eau avec la bactérie E. coli pendant 30 minutes. Si le papier change de couleur alors la bactérie E. coli est présente.\\\\
+  \includegraphics{./img/ecoli.png}\\
+
+
+
 Avant de pouvoir trouver les épitopes communs de toutes les souches de E. coli, il va falloir faire un alignement de séquence avec toutes les souches afin de faire ressortir les régions de séquences similaires.
 
 Un alignement de séquence est une manière de représenter deux ou plusieurs séquences de macromolécules biologiques les unes sous les autres, de manière à en faire ressortir les régions homologues ou similaires. L'objectif d'un alignement de séquence est donc d'identifier les zones de concordance.
@@ -68,4 +78,9 @@ Nous allons donc nous orienter vers l'algorithme MUSCLE pour pouvoir aligner nos
   
   \section{Conclusion}
 
+  
+\bibliography{biblio}
+\nocite{*}
+
 \end{document}
+
