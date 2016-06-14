@@ -4,6 +4,7 @@
 \usepackage{pbox}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{subfig}
 
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}r@{}}#2\end{tabular}}
@@ -158,6 +159,40 @@
   \newpage
   \appendix
   \section{Annexes}
+    \subsection{Repository GitHub}
+      Les sources du projet sont disponibles sur un repo GitHub, à l'addresse \\
+      {\centering
+        \texttt{https://github.com/younTheory/bbcislife}
+      \par}
+
     \subsection{Détection d'épitopes}
+      \begin{figure}[h]%
+        \centering
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq1.PNG}}}%
+        \qquad
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq2.PNG}}}%
+      \end{figure}
+
+      \begin{figure}[h]%
+        \centering
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq3.PNG}}}%
+        \qquad
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq4.PNG}}}%
+      \end{figure}
+
+      \newpage
+      \begin{figure}[h]%
+        \centering
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq5.PNG}}}%
+        \qquad
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq6.PNG}}}%
+      \end{figure}
+
+      \begin{figure}[h]%
+        \centering
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq7.PNG}}}%
+        \qquad
+        \subfloat{{\includegraphics[width=0.45\textwidth]{./img/seq8.PNG}}}%
+      \end{figure}
 
 \end{document}
